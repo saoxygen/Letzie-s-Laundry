@@ -1,0 +1,313 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* color: #efa693;
+      color: #793c5d; */
+}
+
+body {
+  position: relative;
+}
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.headings {
+  background-color: #060711;
+  padding: 20px 0px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.cl {
+  color: #a0b102;
+}
+.ls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#hero {
+  background-image: url("Product images/pex.jpg");
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 90%;
+}
+
+#nav {
+  width: 100%;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#nav div {
+  height: 100%;
+}
+
+#nav img {
+  height: 6rem;
+}
+
+#nav ul {
+  gap: 5rem;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#nav li {
+  height: 100%;
+}
+
+#nav li a {
+  text-decoration: none;
+  text-align: center;
+  color: #2e8bd2;
+  padding: 10px 30px;
+  background-color: #e1f2ff;
+  height: 100%;
+  width: 10rem;
+  font-weight: 600;
+}
+
+#nav li a:hover,
+#nav li:hover {
+  color: #e1f2ff;
+  background-color: #2e8bd2;
+}
+
+#nav li a:active,
+#nav li:hover {
+  color: #2e8bd2;
+  background-color: #e1f2ff;
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.hero-content img {
+  height: 30rem;
+}
+
+.hero-content-child {
+  height: 100%;
+  flex-direction: column;
+  z-index: 2;
+}
+.product-services,
+.product-services {
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.card ul {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card li {
+  color: #265070;
+  font-weight: 800;
+}
+.card {
+  background-color: #e1f2ff;
+  padding: 20px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  height: 40%;
+  width: 50%;
+  position: relative;
+  border: 5px solid #265070;
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0px;
+  width: 100%;
+  background-color: #2e8bd2;
+  color: #e1f2ff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.footer {
+  flex-direction: column;
+  height: 20vh;
+  gap: 2rem;
+  width: 100%;
+  background-color: #e1f2ff;
+  color: #265070;
+}
+
+.detail-container {
+  gap: 10px;
+}
+.details-left,
+.details-right {
+  flex-direction: column;
+  width: 50%;
+}
+
+.details-left {
+  align-items: flex-end;
+}
+
+.details-left div {
+  font-weight: 600;
+}
+
+.details-right {
+  align-items: flex-start;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  z-index: 2;
+  width: 100%;
+  height: 70vh;
+  backdrop-filter: blur(4px);
+}
+
+#about .hero-content-child {
+  height: auto;
+}
+
+#about .card {
+  height: 70%;
+  width: 60%;
+  z-index: 1;
+}
+
+#about .card li {
+  text-align: center;
+}
+
+#about {
+  flex-direction: column;
+  background-image: url("Product images/jeremy-sallee-lgrM1t4rxWQ-unsplash.jpg");
+  background-color: #e1f2ff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: -1px;
+  height: 20%;
+  width: 100%;
+  z-index: 1;
+}
+
+.wave2 {
+  position: absolute;
+  top: -1px;
+  height: 30%;
+  width: 100%;
+  z-index: 1;
+}
+
+#about nav {
+  height: 10vh;
+  background-color: #e1f2ff;
+  z-index: 2;
+}
+
+#about nav div {
+  height: 100%;
+  font-size: 26px;
+  color: #265070;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-content img {
+    height: 20rem;
+  }
+
+  .card {
+    height: 80%;
+    width: 80%;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-services ul {
+    margin-bottom: 10px;
+  }
+
+  #nav img {
+    display: none;
+  }
+
+  #about {
+    height: auto;
+  }
+
+  .about-container {
+    grid-template-columns: 100%;
+
+    overflow-x: scroll;
+  }
+
+  #about .card {
+    height: 95%;
+    width: 90%;
+  }
+
+  #about .card li {
+    font-size: 12px;
+  }
+
+  #about li {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .about-container {
+    grid-template-columns: 85% 85%;
+    place-items: center;
+  }
+
+  #about .hero-content-child {
+    height: 80%;
+  }
+
+  .wave,
+  .wave2 {
+    display: none;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px 0px;
+  }
+
+  .details-right,
+  .details-left {
+    gap: 10px;
+  }
+}
